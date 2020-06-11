@@ -11,3 +11,7 @@ function fuzzyMatch(drivers,string){
      return letter.slice(0, nameLength) === name;
   })
 }
+
+function matchName(drivers,string){
+  
+}
