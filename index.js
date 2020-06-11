@@ -4,4 +4,4 @@
 
 const fuzzyMatch = (drivers, string) => drivers.filter(name =>  name.toLowerCase().startsWith(string.toLowerCase()) )
 
-const matchName = (drivers, string) => drivers.filter(driverObj => driverObj.name === string )
+const matchName = (drivers, string) => drivers.filter(name => driverObj.name === string )
