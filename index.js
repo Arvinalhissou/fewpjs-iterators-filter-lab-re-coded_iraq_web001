@@ -6,8 +6,8 @@
   })
 }
 function fuzzyMatch(drivers,string){
-  let lengthOfName = partialName.length;
+  let nameLength = name.length;
   return drivers.filter(letter=>{
-    return 
+     return letter.slice(0, nameLength) === name;
   })
 }
