@@ -2,7 +2,7 @@
     
   function findMatching(drivers,stringName){
   return drivers.filter(name =>{
-    return name.toLowerCase === stringName.toUperCase;
+    return name.toLowerCase === stringName.toLowerCase;
   })
 }
 function fuzzyMatch(drivers,string){
