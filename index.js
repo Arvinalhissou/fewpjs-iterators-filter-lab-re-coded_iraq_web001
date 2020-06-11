@@ -1,7 +1,7 @@
 // Code your solution here
     
   function findMatching(drivers,stringName){
-  drivers.filter(name =>{
-    
+  return drivers.filter(name =>{
+    return name.toUperCase === stringName.toUperCase;
   })
 }
