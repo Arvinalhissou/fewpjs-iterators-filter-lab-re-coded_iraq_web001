@@ -5,3 +5,8 @@
     return name.toUperCase === stringName.toUperCase;
   })
 }
+function fuzzyMatch(drivers,string){
+  return drivers.filter(letter=>{
+    return 
+  })
+}
