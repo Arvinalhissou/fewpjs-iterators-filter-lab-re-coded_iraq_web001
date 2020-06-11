@@ -1,19 +1,7 @@
 // Code your solution here
     
-  function findMatching(drivers,string){
-  return drivers.filter(name =>{
-    return name.toLowerCase() === string.toLowerCase();
-  })
-}
-function fuzzyMatch(drivers,string){
-  let nameLength = name.length;
-  return drivers.filter(letter=>{
-     return letter.slice(0, nameLength) === name;
-  })
-}
+ const findMatching = (drivers, string) => drivers.filter(driver =>  driver.toLowerCase() === string.toLowerCase() )
 
-function matchName(drivers,string){
-  return drivers.filter(obj=>{
-    return obj.name === name;
-  })
-}
+const fuzzyMatch = (drivers, string) => drivers.filter(driver =>  driver.toLowerCase().startsWith(string.toLowerCase()) )
+
+const matchName = (drivers, string) => drivers.filter(driverObj => driverObj.name === string )
